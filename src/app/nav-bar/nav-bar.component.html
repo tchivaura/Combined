@@ -1,24 +1,46 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">HSPA</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" routerLink="#">HSPA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link " aria-current="page"  routerLink="active" routerLink="/">Buy</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" routerLink="active" routerLink="/">Rent</a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" routerLink="active" routerLink="/add-property">Property List</a>
         </li>
+        
       </ul>
-      <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
+      <div>
+        <ul class="nav navbar-nav">
+          <li *ngIf="!loggedin()" class="nav-item">
+            <a class="nav-link" routerLink="/user/register">Register</a>
+          </li>
+          <li *ngIf="!loggedin()" class="nav-item">
+            <a class="nav-link" routerLink="/user/login">Login</a>
+          </li>
+          <li *ngIf="loggedin()" class="nav-item">
+            <a class="nav-link" (click)="logout()">Logout</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

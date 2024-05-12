@@ -1,0 +1,50 @@
+[
+{
+    "Id":1,
+    "SellRent":1,
+    "Name" :"Biral Hose",
+    "Type":"House",
+    "Price" :12000,
+    "Image":"houses"
+  },
+  {
+    "Id":2,
+    "SellRent":2,
+    "Name" :"Erose  Viilla",
+    "Type":"House",
+    "Price" :11000,
+    "Image":"prop-2"
+  },
+  {
+    "Id":3,
+    "SellRent":1,
+    "Name" :"Macro Viilla",
+    "Type":"House",
+    "Price" :14000,
+    "Image":"prop-3"
+  },
+  {
+    "Id":4,
+    "SellRent":1,
+    "Name" :"Paerl White",
+    "Type":"House",
+    "Price" :14300,
+    "Image":"prop-4"
+  },
+  {
+    "Id":5,
+    "SellRent":1,
+    "Name" :"Tinashe White",
+    "Type":"House",
+    "Price" :15300,
+    "Image":"prop-5"
+  },
+  {
+    "Id":6,
+    "SellRent":1,
+    "Name" :"Chivaura  White",
+    "Type":"House",
+    "Price" :15300
+
+  }
+]
