@@ -12,10 +12,11 @@
       </li>
     </ul>
   </div>
-    <div class="card-body">
-<h1>{{property.Name}}</h1>
-<h2>{{property.Type}}</h2>
-<h2>{{property.Price}}</h2>
+    <div class="card-body p-1">
+      <h1 class="mb-0">{{property.BHK}} BHK {{property.Type}}</h1>
+      in {{property.Name}}
+      <span *ngIf="property.Name">,</span>
+      {{property.City}}
 
 </div>
 </div>

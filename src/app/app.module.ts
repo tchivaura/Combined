@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 
 
@@ -25,6 +25,7 @@ import { PropertyDetailComponent } from './property/property-detail/property-det
 import { UserServiceService } from './services/user-service.service';
 import { AlertifyService } from './services/alertify.service';
 import { AuthService } from './services/auth.service';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 
 const appRoutes :Routes=[
   {path:'',component:PropertyListComponent},
@@ -56,7 +57,9 @@ const appRoutes :Routes=[
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    ButtonsModule.forRoot(),
+    BsDatepickerModule.forRoot()
     
   ],
   providers: [
